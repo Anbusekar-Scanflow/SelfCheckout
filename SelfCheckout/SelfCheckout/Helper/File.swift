@@ -22,6 +22,10 @@ let CategoryDetails: [ProductCategory] = [
     ProductCategory(title: "Electronics", image: UIImage(named: "Electronics") ?? UIImage()),
     ProductCategory(title: "Fashion", image: UIImage(named: "fashion") ?? UIImage()),
     ProductCategory(title: "Home", image: UIImage(named: "home") ?? UIImage()),
-    ProductCategory(title: "Mobiles", image: UIImage(named: "Mobiles") ?? UIImage())
+    ProductCategory(title: "Mobiles", image: UIImage(named: "Mobiles") ?? UIImage()),
+    ProductCategory(title: "Baby Products", image: UIImage(named: "baby") ?? UIImage()),
+    ProductCategory(title: "Appliances", image: UIImage(named: "Appliances") ?? UIImage()),
+    ProductCategory(title: "Electronics", image: UIImage(named: "Electronics") ?? UIImage()),
+    ProductCategory(title: "Fashion", image: UIImage(named: "fashion") ?? UIImage())
     
 ]

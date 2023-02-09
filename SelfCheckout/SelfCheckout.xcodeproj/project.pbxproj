@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		683EBDA62994B46000894870 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EBDA52994B46000894870 /* ProductListViewController.swift */; };
 		68AC75C1299253C100F3B9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C0299253C100F3B9DA /* AppDelegate.swift */; };
 		68AC75C3299253C100F3B9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C2299253C100F3B9DA /* SceneDelegate.swift */; };
 		68AC75C5299253C100F3B9DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C4299253C100F3B9DA /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		683EBDA52994B46000894870 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		68AC75BD299253C100F3B9DA /* SelfCheckout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfCheckout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC75C0299253C100F3B9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68AC75C2299253C100F3B9DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				68AC75DA299294B400F3B9DA /* CollectionView */,
 				68AC75D7299292F200F3B9DA /* Helper */,
 				68AC75C0299253C100F3B9DA /* AppDelegate.swift */,
+				683EBDA52994B46000894870 /* ProductListViewController.swift */,
 				68AC75C2299253C100F3B9DA /* SceneDelegate.swift */,
 				68AC75C4299253C100F3B9DA /* ViewController.swift */,
 				68AC75C6299253C100F3B9DA /* Main.storyboard */,
@@ -180,6 +183,7 @@
 				68AC75E32994050C00F3B9DA /* TopOfferCollectionViewCell.swift in Sources */,
 				68AC75CB299253C100F3B9DA /* SelfCheckout.xcdatamodeld in Sources */,
 				68AC75C1299253C100F3B9DA /* AppDelegate.swift in Sources */,
+				683EBDA62994B46000894870 /* ProductListViewController.swift in Sources */,
 				68AC75C3299253C100F3B9DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

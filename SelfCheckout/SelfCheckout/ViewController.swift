@@ -46,7 +46,13 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCategoryCell", for: indexPath) as! ProductCategoryCell
         cell.updateProductCategory(image: CategoryDetails[indexPath.row].image, title: CategoryDetails[indexPath.row].title)
+        
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ProductListViewController") as? ProductListViewController {
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
 }
