@@ -41,4 +41,9 @@ extension ProductListViewController : UICollectionViewDelegate, UICollectionView
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScanningViewController") as? ScanningViewController {
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
 }

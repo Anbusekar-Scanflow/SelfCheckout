@@ -559,6 +559,36 @@
             </objects>
             <point key="canvasLocation" x="2032.824427480916" y="3.5211267605633805"/>
         </scene>
+        <!--Scanning-->
+        <scene sceneID="Gh5-Ou-RpK">
+            <objects>
+                <viewController storyboardIdentifier="ScanningViewController" title="Scanning" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Emu-HU-mgL" customClass="ScanningViewController" customModule="SelfCheckout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2tD-Fq-oSf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRN-rJ-t6U">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wsh-Sk-ESG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wsh-Sk-ESG" firstAttribute="trailing" secondItem="TRN-rJ-t6U" secondAttribute="trailing" id="6CN-kK-Okn"/>
+                            <constraint firstItem="TRN-rJ-t6U" firstAttribute="leading" secondItem="wsh-Sk-ESG" secondAttribute="leading" id="AQI-v6-vNC"/>
+                            <constraint firstItem="wsh-Sk-ESG" firstAttribute="bottom" secondItem="TRN-rJ-t6U" secondAttribute="bottom" id="Oxq-r3-8mi"/>
+                            <constraint firstItem="TRN-rJ-t6U" firstAttribute="top" secondItem="wsh-Sk-ESG" secondAttribute="top" id="qwp-Zh-Wg6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="TRN-rJ-t6U" id="s5Y-R5-Gqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QVB-7o-CyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ATm-G4-Iko">
             <objects>

@@ -1,0 +1,245 @@
+//
+//  UITableView.swift
+//  DocScan
+//
+//  Created by @karthi on 07/09/22.
+//  Copyright © 2022 ImTech. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension UITableViewHeaderFooterView {
+
+    /// Returns an identifier for reuse the ui element tableview header and footer view
+    static var reuseIdentifier: String {
+        let className = String(describing: self)
+        return className
+    }
+}
+
+extension UITableViewCell {
+
+    /// Returns an identifier for reuse the ui element tableview cell
+    static var reuseIdentifier: String! {
+        let className = String(describing: self)
+        return className
+    }
+}
+
+extension UITableView {
+
+    /// Setting tableview with basic configuration
+    func setupBasicTableView() {
+
+        self.isScrollEnabled = true
+        self.showsVerticalScrollIndicator = false
+        self.showsHorizontalScrollIndicator = false
+        self.alwaysBounceVertical = true
+        self.separatorStyle = .none
+
+    }
+}
+
+/// My Question answered table view configuration
+/// - Parameters:
+///   - delegate: Delegate of the tableview
+///   - datasource: Datasource of the tableview
+/// - Returns: Returns a tableview with the given configuration
+public enum TableType {
+    case group
+    case plain
+}
+
+/// Configuring tableview with plain or individual cell views
+/// - Parameters:
+///   - delegate: Delegate of the tableview
+///   - datasource: Datasource of the tableview
+/// - Returns: Returns a plain tableview with given configuration
+public func customTableView(_ tableType: TableType,
+                            _ delegate: UITableViewDelegate,
+                            _ datasource: UITableViewDataSource) -> UITableView {
+    let tableView = UITableView.init(frame: CGRect.zero, style: tableType == .group ? .grouped : .plain)
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+    tableView.setupBasicTableView()
+    tableView.dataSource = datasource
+    tableView.delegate = delegate
+    return tableView
+}
+
+public func basicTableView(_ delegate: UITableViewDelegate,
+                            _ datasource: UITableViewDataSource) -> UITableView {
+    let tableView = UITableView()
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+    tableView.setupBasicTableView()
+    tableView.dataSource = datasource
+    tableView.delegate = delegate
+    return tableView
+}
+
+/// Configuring tableview with plain or individual cell views
+/// - Parameters:
+///   - delegate: Delegate of the tableview
+///   - datasource: Datasource of the tableview
+/// - Returns: Returns a plain tableview with given configuration
+public func plainTableView(_ delegate: UITableViewDelegate,
+                           _ datasource: UITableViewDataSource) -> UITableView {
+
+    let tableView = UITableView.init(frame: CGRect.zero, style: .plain)
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+    tableView.setupBasicTableView()
+    tableView.dataSource = datasource
+    tableView.delegate = delegate
+    return tableView
+
+}
+
+/// Configuring tableview with group of cells
+/// - Parameters:
+///   - delegate: Delegate of the tableview
+///   - datasource: Datasource of the tableview
+/// - Returns: Returns a tableview with grouped configuration
+public func groupTableView(_ delegate: UITableViewDelegate,
+                           _ datasource: UITableViewDataSource) -> UITableView {
+
+    let tableView = UITableView.init(frame: CGRect.zero, style: .grouped)
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+    tableView.setupBasicTableView()
+    tableView.dataSource = datasource
+    tableView.delegate = delegate
+    return tableView
+
+}
+
+extension UITableView {
+    func indexPathExists(indexPath:IndexPath) -> Bool {
+        if indexPath.section >= self.numberOfSections {
+            return false
+        }
+        if indexPath.row >= self.numberOfRows(inSection: indexPath.section) {
+            return false
+        }
+        return true
+    }
+}
+
+extension UIScrollView {
+
+    var isAtTop: Bool {
+        return contentOffset.y <= verticalOffsetForTop
+    }
+
+    var isAtBottom: Bool {
+        return contentOffset.y >= verticalOffsetForBottom
+    }
+
+    var verticalOffsetForTop: CGFloat {
+        let topInset = contentInset.top
+        return -topInset
+    }
+
+    var verticalOffsetForBottom: CGFloat {
+        let scrollViewHeight = bounds.height
+        let scrollContentSizeHeight = contentSize.height
+        let bottomInset = contentInset.bottom
+        let scrollViewBottomOffset = scrollContentSizeHeight + bottomInset - scrollViewHeight
+        return scrollViewBottomOffset
+    }
+
+}
+extension UITableView {
+
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .black
+        messageLabel.numberOfLines = 1
+        messageLabel.textAlignment = .center
+        messageLabel.font = .systemFont(ofSize: 14)
+        messageLabel.sizeToFit()
+
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+    }
+}
+
+extension UIView {
+    func showBlurLoader() {
+        let blurLoader = BlurLoader(frame: frame)
+        self.addSubview(blurLoader)
+    }
+
+    func removeBluerLoader() {
+        if let blurLoader = subviews.first(where: { $0 is BlurLoader }) {
+            blurLoader.removeFromSuperview()
+        }
+    }
+}
+
+
+class BlurLoader: UIView {
+
+    var blurEffectView: UIVisualEffectView?
+
+    override init(frame: CGRect) {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = frame
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.blurEffectView = blurEffectView
+        super.init(frame: frame)
+        addSubview(blurEffectView)
+        addLoader()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    private func addLoader() {
+        guard let blurEffectView = blurEffectView else { return }
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        blurEffectView.contentView.addSubview(activityIndicator)
+        activityIndicator.center = blurEffectView.contentView.center
+        activityIndicator.startAnimating()
+    }
+}
+
+
+extension UIViewController {
+    func showToastHint(_ msg: String,_ autoHide: Bool) {
+        let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+        alert.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = .appDarkBlack
+        alert.view.layer.cornerRadius = 20
+        alert.setMessage(font: .none, color: .white)
+        self.present(alert, animated: true)
+        if autoHide {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                alert.dismiss(animated: true)
+            }
+        }
+    }
+}
+
+extension UIAlertController {
+    //Set message font and message color
+      func setMessage(font: UIFont?, color: UIColor?) {
+        guard let title = self.message else {
+          return
+        }
+        let attributedString = NSMutableAttributedString(string: title)
+        if let titleFont = font {
+          attributedString.addAttributes([NSAttributedString.Key.font : titleFont], range: NSMakeRange(0, title.utf8.count))
+        }
+        if let titleColor = color {
+          attributedString.addAttributes([NSAttributedString.Key.foregroundColor : titleColor], range: NSMakeRange(0, title.utf8.count))
+        }
+        self.setValue(attributedString, forKey: "attributedMessage")//4
+      }
+}
+
