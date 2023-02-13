@@ -6,4 +6,15 @@
 //
 
 import Foundation
-                                                                                                                                                                                                                                                                                                                              
+import UIKit
+
+class TopOfferCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var productOfferImage: UIImageView!
+    
+    func updateOffer(bannerImage: UIImage) {
+       
+        productOfferImage.image = bannerImage
+    }
+    
+}

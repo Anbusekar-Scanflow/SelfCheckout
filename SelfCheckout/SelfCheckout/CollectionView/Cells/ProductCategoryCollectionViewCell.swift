@@ -16,5 +16,7 @@ class ProductCategoryCell: UICollectionViewCell {
     func updateProductCategory(image:UIImage, title:String) {
         productImage.image = image
         productTitle.text = title
+        productTitle.textColor = UIColor(named: "CategoryTitleColor")
+
     }
 }

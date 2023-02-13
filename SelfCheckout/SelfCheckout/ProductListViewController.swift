@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class ProductListViewController: UIViewController {
+    
     @IBOutlet weak var productsCollectionView: UICollectionView!
     
     @IBOutlet weak var productCategoryList: UICollectionView!
@@ -25,13 +26,19 @@ class ProductListViewController: UIViewController {
 extension ProductListViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return CategoryDetails.count
+        return collectionView == productCategoryList ? ProductCategory.count : Products.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCategoryCell", for: indexPath) as! ProductCategoryCell
-        cell.updateProductCategory(image: CategoryDetails[indexPath.row].image, title: CategoryDetails[indexPath.row].title)
-        return cell
+        if collectionView == productCategoryList {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCategoryCell", for: indexPath) as! ProductCategoryCell
+            cell.updateProductCategory(image: ProductCategory[indexPath.row].image, title: ProductCategory[indexPath.row].title)
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as! ProductCollectionViewCell
+            cell.updateProduct(name: Products[indexPath.row].title, image: Products[indexPath.row].image)
+            return cell
+        }
     }
     
 }

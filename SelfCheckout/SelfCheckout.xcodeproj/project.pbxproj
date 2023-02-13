@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		683EBDA62994B46000894870 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EBDA52994B46000894870 /* ProductListViewController.swift */; };
+		68A199B92996AD000069AC75 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A199B82996AD000069AC75 /* ProductCollectionViewCell.swift */; };
 		68AC75C1299253C100F3B9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C0299253C100F3B9DA /* AppDelegate.swift */; };
 		68AC75C3299253C100F3B9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C2299253C100F3B9DA /* SceneDelegate.swift */; };
 		68AC75C5299253C100F3B9DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C4299253C100F3B9DA /* ViewController.swift */; };
@@ -18,10 +19,12 @@
 		68AC75D92992930200F3B9DA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75D82992930200F3B9DA /* File.swift */; };
 		68AC75E12992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */; };
 		68AC75E32994050C00F3B9DA /* TopOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */; };
+		68CDF869299604BA007305D2 /* PublicEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF868299604BA007305D2 /* PublicEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		683EBDA52994B46000894870 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		68A199B82996AD000069AC75 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AC75BD299253C100F3B9DA /* SelfCheckout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfCheckout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC75C0299253C100F3B9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68AC75C2299253C100F3B9DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		68AC75D82992930200F3B9DA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOfferCollectionViewCell.swift; sourceTree = "<group>"; };
+		68CDF868299604BA007305D2 /* PublicEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				68AC75D82992930200F3B9DA /* File.swift */,
+				68CDF868299604BA007305D2 /* PublicEnum.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */,
 				68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */,
+				68A199B82996AD000069AC75 /* ProductCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -179,7 +185,9 @@
 			files = (
 				68AC75D92992930200F3B9DA /* File.swift in Sources */,
 				68AC75C5299253C100F3B9DA /* ViewController.swift in Sources */,
+				68A199B92996AD000069AC75 /* ProductCollectionViewCell.swift in Sources */,
 				68AC75E12992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift in Sources */,
+				68CDF869299604BA007305D2 /* PublicEnum.swift in Sources */,
 				68AC75E32994050C00F3B9DA /* TopOfferCollectionViewCell.swift in Sources */,
 				68AC75CB299253C100F3B9DA /* SelfCheckout.xcdatamodeld in Sources */,
 				68AC75C1299253C100F3B9DA /* AppDelegate.swift in Sources */,
