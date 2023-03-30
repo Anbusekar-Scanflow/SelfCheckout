@@ -29,6 +29,7 @@
 		68AC75E12992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */; };
 		68AC75E32994050C00F3B9DA /* TopOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */; };
 		68CDF869299604BA007305D2 /* PublicEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF868299604BA007305D2 /* PublicEnum.swift */; };
+		975B46590AF38478ECDBE47B /* Pods_SelfCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCheckout.debug.xcconfig"; path = "Target Support Files/Pods-SelfCheckout/Pods-SelfCheckout.debug.xcconfig"; sourceTree = "<group>"; };
 		68015F4A2999E618002735A1 /* ScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningViewController.swift; sourceTree = "<group>"; };
 		68015F532999F106002735A1 /* ScanflowBarcode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowBarcode.framework; sourceTree = "<group>"; };
 		68015F572999F171002735A1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOfferCollectionViewCell.swift; sourceTree = "<group>"; };
 		68CDF868299604BA007305D2 /* PublicEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnum.swift; sourceTree = "<group>"; };
+		93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCheckout.release.xcconfig"; path = "Target Support Files/Pods-SelfCheckout/Pods-SelfCheckout.release.xcconfig"; sourceTree = "<group>"; };
+		C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfCheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +82,21 @@
 			files = (
 				68015F5D2999F847002735A1 /* ScanflowCore.framework in Frameworks */,
 				68015F552999F110002735A1 /* ScanflowBarcode.framework in Frameworks */,
+				975B46590AF38478ECDBE47B /* Pods_SelfCheckout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65C422A3B25DBF5527FD909A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68015F472999E5A0002735A1 /* framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,8 @@
 			children = (
 				68AC75BF299253C100F3B9DA /* SelfCheckout */,
 				68AC75BE299253C100F3B9DA /* Products */,
+				754422FBD8929F2D8B319D08 /* Pods */,
+				65C422A3B25DBF5527FD909A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +175,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		754422FBD8929F2D8B319D08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */,
+				93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68AC75D4299253C300F3B9DA /* Build configuration list for PBXNativeTarget "SelfCheckout" */;
 			buildPhases = (
+				2F22D01B3B41ED2BD5A3B5BA /* [CP] Check Pods Manifest.lock */,
 				68AC75B9299253C100F3B9DA /* Sources */,
 				68AC75BA299253C100F3B9DA /* Frameworks */,
 				68AC75BB299253C100F3B9DA /* Resources */,
@@ -227,6 +253,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F22D01B3B41ED2BD5A3B5BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelfCheckout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68AC75B9299253C100F3B9DA /* Sources */ = {
@@ -388,6 +439,7 @@
 		};
 		68AC75D5299253C300F3B9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -421,6 +473,7 @@
 		};
 		68AC75D6299253C300F3B9DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
