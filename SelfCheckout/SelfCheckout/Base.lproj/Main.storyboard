@@ -27,10 +27,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoO-8f-flD">
-                                                        <rect key="frame" x="20" y="0.0" width="353" height="50"/>
+                                                        <rect key="frame" x="20" y="0.0" width="291" height="50"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for product" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFo-ZZ-zn3">
-                                                                <rect key="frame" x="47" y="0.0" width="306" height="50"/>
+                                                                <rect key="frame" x="47" y="0.0" width="244" height="50"/>
                                                                 <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -60,12 +60,23 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oru-rO-Nxc">
+                                                        <rect key="frame" x="336" y="0.0" width="32" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="32" id="bx0-mS-raG"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="CartImage"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="OoO-8f-flD" firstAttribute="leading" secondItem="T6F-Du-s15" secondAttribute="leading" constant="20" id="16h-S9-CYw"/>
+                                                    <constraint firstItem="Oru-rO-Nxc" firstAttribute="top" secondItem="SFo-ZZ-zn3" secondAttribute="top" id="3DN-e0-Htz"/>
                                                     <constraint firstItem="OoO-8f-flD" firstAttribute="top" secondItem="T6F-Du-s15" secondAttribute="top" id="KgI-N8-QZu"/>
-                                                    <constraint firstAttribute="trailing" secondItem="OoO-8f-flD" secondAttribute="trailing" constant="20" id="xdz-0j-y4b"/>
+                                                    <constraint firstItem="Oru-rO-Nxc" firstAttribute="leading" secondItem="OoO-8f-flD" secondAttribute="trailing" constant="25" id="T7q-kp-7ru"/>
+                                                    <constraint firstItem="Oru-rO-Nxc" firstAttribute="bottom" secondItem="SFo-ZZ-zn3" secondAttribute="bottom" id="V0k-Ld-LPu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Oru-rO-Nxc" secondAttribute="trailing" constant="25" id="sdw-Wc-NxH"/>
                                                     <constraint firstAttribute="height" constant="60" id="yiH-5Y-lyz"/>
                                                 </constraints>
                                             </view>
@@ -294,13 +305,24 @@
                                 </items>
                                 <color key="selectedImageTintColor" red="0.34901960784313724" green="0.098039215686274508" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k9-TV-2Li">
+                                <rect key="frame" x="168.66666666666666" y="740" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="Y21-Wj-ik1"/>
+                                    <constraint firstAttribute="height" constant="56" id="zHX-tn-PwL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ScanImage"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9k9-TV-2Li" firstAttribute="centerY" secondItem="WFh-NY-Y8L" secondAttribute="top" id="159-ST-3OQ"/>
                             <constraint firstItem="d1B-eM-Y06" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Gx-aL-mwY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d1B-eM-Y06" secondAttribute="trailing" id="QwL-I9-MN7"/>
                             <constraint firstItem="WFh-NY-Y8L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qy4-8l-u2V"/>
+                            <constraint firstItem="9k9-TV-2Li" firstAttribute="centerX" secondItem="WFh-NY-Y8L" secondAttribute="centerX" id="axx-9k-cU1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WFh-NY-Y8L" secondAttribute="bottom" id="poZ-TU-A8W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WFh-NY-Y8L" secondAttribute="trailing" id="qgF-rl-Vwo"/>
                             <constraint firstItem="d1B-eM-Y06" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r12-E1-RpS"/>
@@ -609,9 +631,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CartImage" width="24" height="32"/>
         <image name="Cereal" width="38" height="56"/>
         <image name="My account" width="18.333333969116211" height="20"/>
         <image name="My orders" width="20" height="20"/>
+        <image name="ScanImage" width="56" height="56"/>
         <image name="SelectedHome" width="24" height="24"/>
         <image name="Super Deal 1" width="12.666666984558105" height="14.333333015441895"/>
         <image name="Top Picks" width="37" height="37"/>
