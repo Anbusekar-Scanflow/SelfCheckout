@@ -74,6 +74,12 @@ class ScanningViewController: UIViewController, ResultViewProtocol {
         scanFlowARManager?.configureScanflowMeasure()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        closeAction()
+        scanFlowARManager = nil
+    }
+    
     // MARK: - Navigation
     class func initWithStory() -> ScanningViewController? {
         let vc = UIStoryboard(name: Stoyboard.main, bundle: nil).instantiateViewController(withIdentifier: "ScanningViewController") as? ScanningViewController
@@ -81,11 +87,12 @@ class ScanningViewController: UIViewController, ResultViewProtocol {
     }
    
     
+    
 }
 
 extension ScanningViewController: ScanflowCameraManagerDelegate {
     func advancedAROverlay(result: String, codeType: String, results: [String]?, processedImage: UIImage?, inferences: [ScanflowCore.Inference]) -> ScanflowCore.TrackedOverlayView? {
-        if let popupview = newPopupScreen(result) {
+        if let popupview = updatePopView() {
             let arOverlay = TrackedOverlayView(overlay: popupview, resultString: result, inferences: inferences)
             return arOverlay
         } else {
@@ -94,15 +101,37 @@ extension ScanningViewController: ScanflowCameraManagerDelegate {
     }
     
     
+    func updatePopView()  -> UIView! {
+        let popView = UIView(frame: CGRect(x: 0, y: 0, width: 260, height: 260))
+        popView.layer.masksToBounds = true
+        popView.layer.cornerRadius = 10
+        popView.backgroundColor = .white
+        let productNameLabel = UILabel(frame: CGRect(x: 0, y: 5, width: 260, height: 20))
+        productNameLabel.textAlignment = .center
+        productNameLabel.font = .systemFont(ofSize: 20, weight: .bold)
+        productNameLabel.text = "Airpod"
+        popView.addSubview(productNameLabel)
+        
+        let prodcutImage = UIImageView(frame: CGRect(x: 0, y: 30, width: 260, height: 200))
+        prodcutImage.image = UIImage(named: "AirPods")
+        prodcutImage.contentMode = .scaleAspectFit
+        popView.addSubview(prodcutImage)
+        
+        let rattingLabel = UILabel(frame: CGRect(x: 0, y: 230, width: 260, height: 20))
+        rattingLabel.text = "4.5"
+        rattingLabel.textAlignment = .center
+        rattingLabel.font = .systemFont(ofSize: 18.0, weight: .semibold)
+        popView.addSubview(rattingLabel)
+        
+        return popView
+    }
+    
     func newPopupScreen(_ decodedResult: String) -> UIView? {
         
         let popupView = AROverlayView.getNibView()
         if decodedResult == "ABC-abc-1234" {
             let productDetails = ProductDetails(name: "AirPods", imageName: "airpods", rating: "4.5")
-            popupView?.populateViewForProduct(productDetails)
-        } else if decodedResult == "0725272730706"{
-            let bloodSample = BloodSampleDetails(patientName: "Karthikeyan-A", bloodGroup: "B+", dateOfTest: self.getCurrentDate(), place: "Madurai")
-            popupView?.populateViewForBloodSample(bloodSample)
+            popupView?.populateViewForProduct(productDetails)   
         } else {
             let productDetails = ProductDetails(name: "Boat - AirDopes", imageName: "airdopes", rating: "4.1")
             popupView?.populateViewForProduct(productDetails)

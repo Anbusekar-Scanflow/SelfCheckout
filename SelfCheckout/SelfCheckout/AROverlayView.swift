@@ -92,3 +92,24 @@ struct BloodSampleDetails {
     let dateOfTest: String
     let place: String
 }
+
+
+class overlayViewForAR: UIView {
+
+    
+    func updateFrame()  -> UIView! {
+        let popView = UIView()
+        let productNameLabel = UILabel(frame: CGRect(x: Int(((popView.frame.width / 2.0) - 25.0)), y: 20, width: 50, height: 20))
+        productNameLabel.text = "Airpod"
+        popView.addSubview(productNameLabel)
+        
+        let prodcutImage = UIImageView(frame: CGRect(x: Int(((popView.frame.width / 2.0) - 25.0)), y: 40, width: 50, height: 50))
+        prodcutImage.image = UIImage(named: "AirPods")
+        popView.addSubview(prodcutImage)
+        
+        let rattingLabel = UILabel(frame: CGRect(x: Int(((popView.frame.width / 2.0) - 25.0)), y: 750, width: 50, height: 20))
+        popView.addSubview(rattingLabel)
+        
+        return popView
+    }
+}
