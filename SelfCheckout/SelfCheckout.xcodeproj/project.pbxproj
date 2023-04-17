@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		68015F4B2999E618002735A1 /* ScanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68015F4A2999E618002735A1 /* ScanningViewController.swift */; };
-		68015F552999F110002735A1 /* ScanflowBarcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68015F532999F106002735A1 /* ScanflowBarcode.framework */; };
-		68015F562999F110002735A1 /* ScanflowBarcode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68015F532999F106002735A1 /* ScanflowBarcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68015F582999F171002735A1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68015F572999F171002735A1 /* ResultViewController.swift */; };
 		68015F5C2999F792002735A1 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68015F5B2999F792002735A1 /* UITableView.swift */; };
-		68015F5D2999F847002735A1 /* ScanflowCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68015F592999F5D0002735A1 /* ScanflowCore.framework */; };
-		68015F5E2999F847002735A1 /* ScanflowCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68015F592999F5D0002735A1 /* ScanflowCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68015F60299A0279002735A1 /* AROverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68015F5F299A0279002735A1 /* AROverlayView.swift */; };
 		68015F62299A0297002735A1 /* AROverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68015F61299A0297002735A1 /* AROverlayView.xib */; };
+		6829B80529D5AD4700DA5B1F /* ScanflowBarcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B80229D5A40100DA5B1F /* ScanflowBarcode.framework */; };
+		6829B80629D5AD4700DA5B1F /* ScanflowBarcode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B80229D5A40100DA5B1F /* ScanflowBarcode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6829B80729D5AD4800DA5B1F /* ScanflowCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B80129D5A40000DA5B1F /* ScanflowCore.framework */; };
+		6829B80829D5AD4800DA5B1F /* ScanflowCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6829B80129D5A40000DA5B1F /* ScanflowCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		683EBDA62994B46000894870 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683EBDA52994B46000894870 /* ProductListViewController.swift */; };
+		6867F1FF29E7C6C7008B1E19 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6867F1FD29E7C6C6008B1E19 /* ProductListTableViewCell.swift */; };
+		6867F20029E7C6C7008B1E19 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6867F1FE29E7C6C6008B1E19 /* ProductListTableViewCell.xib */; };
 		68A199B92996AD000069AC75 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A199B82996AD000069AC75 /* ProductCollectionViewCell.swift */; };
 		68AC75C1299253C100F3B9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C0299253C100F3B9DA /* AppDelegate.swift */; };
 		68AC75C3299253C100F3B9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75C2299253C100F3B9DA /* SceneDelegate.swift */; };
@@ -29,7 +31,7 @@
 		68AC75E12992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */; };
 		68AC75E32994050C00F3B9DA /* TopOfferCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */; };
 		68CDF869299604BA007305D2 /* PublicEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF868299604BA007305D2 /* PublicEnum.swift */; };
-		975B46590AF38478ECDBE47B /* Pods_SelfCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */; };
+		68E8DF8829E80A430007AF91 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E8DF8729E80A430007AF91 /* PaymentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,8 +41,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				68015F5E2999F847002735A1 /* ScanflowCore.framework in Embed Frameworks */,
-				68015F562999F110002735A1 /* ScanflowBarcode.framework in Embed Frameworks */,
+				6829B80829D5AD4800DA5B1F /* ScanflowCore.framework in Embed Frameworks */,
+				6829B80629D5AD4700DA5B1F /* ScanflowBarcode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,15 +50,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCheckout.debug.xcconfig"; path = "Target Support Files/Pods-SelfCheckout/Pods-SelfCheckout.debug.xcconfig"; sourceTree = "<group>"; };
 		68015F4A2999E618002735A1 /* ScanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningViewController.swift; sourceTree = "<group>"; };
-		68015F532999F106002735A1 /* ScanflowBarcode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowBarcode.framework; sourceTree = "<group>"; };
 		68015F572999F171002735A1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		68015F592999F5D0002735A1 /* ScanflowCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowCore.framework; sourceTree = "<group>"; };
 		68015F5B2999F792002735A1 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		68015F5F299A0279002735A1 /* AROverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AROverlayView.swift; sourceTree = "<group>"; };
 		68015F61299A0297002735A1 /* AROverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AROverlayView.xib; sourceTree = "<group>"; };
+		6829B80129D5A40000DA5B1F /* ScanflowCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowCore.framework; sourceTree = "<group>"; };
+		6829B80229D5A40100DA5B1F /* ScanflowBarcode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ScanflowBarcode.framework; sourceTree = "<group>"; };
 		683EBDA52994B46000894870 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		6867F1FD29E7C6C6008B1E19 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		6867F1FE29E7C6C6008B1E19 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
 		68A199B82996AD000069AC75 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AC75BD299253C100F3B9DA /* SelfCheckout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfCheckout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AC75C0299253C100F3B9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +74,7 @@
 		68AC75E02992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		68AC75E22994050C00F3B9DA /* TopOfferCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOfferCollectionViewCell.swift; sourceTree = "<group>"; };
 		68CDF868299604BA007305D2 /* PublicEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnum.swift; sourceTree = "<group>"; };
-		93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfCheckout.release.xcconfig"; path = "Target Support Files/Pods-SelfCheckout/Pods-SelfCheckout.release.xcconfig"; sourceTree = "<group>"; };
-		C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfCheckout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E8DF8729E80A430007AF91 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,30 +82,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68015F5D2999F847002735A1 /* ScanflowCore.framework in Frameworks */,
-				68015F552999F110002735A1 /* ScanflowBarcode.framework in Frameworks */,
-				975B46590AF38478ECDBE47B /* Pods_SelfCheckout.framework in Frameworks */,
+				6829B80729D5AD4800DA5B1F /* ScanflowCore.framework in Frameworks */,
+				6829B80529D5AD4700DA5B1F /* ScanflowBarcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65C422A3B25DBF5527FD909A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C735B7423D05DE306CE30B4D /* Pods_SelfCheckout.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		68015F472999E5A0002735A1 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				68015F592999F5D0002735A1 /* ScanflowCore.framework */,
-				68015F532999F106002735A1 /* ScanflowBarcode.framework */,
+				6829B80229D5A40100DA5B1F /* ScanflowBarcode.framework */,
+				6829B80129D5A40000DA5B1F /* ScanflowCore.framework */,
 			);
 			path = framework;
+			sourceTree = "<group>";
+		};
+		6867F1FB29E7C5D8008B1E19 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6867F1FC29E7C5E3008B1E19 /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		6867F1FC29E7C5E3008B1E19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6867F1FD29E7C6C6008B1E19 /* ProductListTableViewCell.swift */,
+				6867F1FE29E7C6C6008B1E19 /* ProductListTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		68AC75B4299253C100F3B9DA = {
@@ -112,7 +122,6 @@
 				68AC75BF299253C100F3B9DA /* SelfCheckout */,
 				68AC75BE299253C100F3B9DA /* Products */,
 				754422FBD8929F2D8B319D08 /* Pods */,
-				65C422A3B25DBF5527FD909A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +136,7 @@
 		68AC75BF299253C100F3B9DA /* SelfCheckout */ = {
 			isa = PBXGroup;
 			children = (
+				6867F1FB29E7C5D8008B1E19 /* TableView */,
 				68015F472999E5A0002735A1 /* framework */,
 				68AC75DA299294B400F3B9DA /* CollectionView */,
 				68AC75D7299292F200F3B9DA /* Helper */,
@@ -144,6 +154,7 @@
 				68015F5B2999F792002735A1 /* UITableView.swift */,
 				68015F5F299A0279002735A1 /* AROverlayView.swift */,
 				68015F61299A0297002735A1 /* AROverlayView.xib */,
+				68E8DF8729E80A430007AF91 /* PaymentViewController.swift */,
 			);
 			path = SelfCheckout;
 			sourceTree = "<group>";
@@ -178,10 +189,7 @@
 		754422FBD8929F2D8B319D08 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */,
-				93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,7 +200,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68AC75D4299253C300F3B9DA /* Build configuration list for PBXNativeTarget "SelfCheckout" */;
 			buildPhases = (
-				2F22D01B3B41ED2BD5A3B5BA /* [CP] Check Pods Manifest.lock */,
 				68AC75B9299253C100F3B9DA /* Sources */,
 				68AC75BA299253C100F3B9DA /* Frameworks */,
 				68AC75BB299253C100F3B9DA /* Resources */,
@@ -245,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6867F20029E7C6C7008B1E19 /* ProductListTableViewCell.xib in Resources */,
 				68AC75D0299253C300F3B9DA /* LaunchScreen.storyboard in Resources */,
 				68AC75CD299253C300F3B9DA /* Assets.xcassets in Resources */,
 				68015F62299A0297002735A1 /* AROverlayView.xib in Resources */,
@@ -254,31 +262,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		2F22D01B3B41ED2BD5A3B5BA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SelfCheckout-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		68AC75B9299253C100F3B9DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -286,6 +269,8 @@
 			files = (
 				68AC75D92992930200F3B9DA /* File.swift in Sources */,
 				68AC75C5299253C100F3B9DA /* ViewController.swift in Sources */,
+				6867F1FF29E7C6C7008B1E19 /* ProductListTableViewCell.swift in Sources */,
+				68E8DF8829E80A430007AF91 /* PaymentViewController.swift in Sources */,
 				68A199B92996AD000069AC75 /* ProductCollectionViewCell.swift in Sources */,
 				68AC75E12992967C00F3B9DA /* ProductCategoryCollectionViewCell.swift in Sources */,
 				68015F4B2999E618002735A1 /* ScanningViewController.swift in Sources */,
@@ -439,7 +424,6 @@
 		};
 		68AC75D5299253C300F3B9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A3B855E04E6B6AE4C36BCEE /* Pods-SelfCheckout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,7 +457,6 @@
 		};
 		68AC75D6299253C300F3B9DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93FAE871CD72783C1A8002F0 /* Pods-SelfCheckout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

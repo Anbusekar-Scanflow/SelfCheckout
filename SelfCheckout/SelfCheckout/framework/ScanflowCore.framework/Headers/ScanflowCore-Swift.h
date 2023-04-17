@@ -338,12 +338,6 @@ SWIFT_CLASS("_TtC12ScanflowCore21ScanflowCameraManager")
 
 
 
-SWIFT_CLASS("_TtC12ScanflowCore28ScanflowDetectionClassiifier")
-@interface ScanflowDetectionClassiifier : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 
 
 

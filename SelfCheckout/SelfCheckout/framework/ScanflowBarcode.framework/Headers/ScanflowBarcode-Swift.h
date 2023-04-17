@@ -260,18 +260,13 @@ SWIFT_CLASS("_TtC15ScanflowBarcode24ScanflowBarCodeARManager")
 
 
 
+
 /// This is the public class of scanflow camera manager
 SWIFT_CLASS("_TtC15ScanflowBarcode22ScanflowBarCodeManager")
 @interface ScanflowBarCodeManager : ScanflowCameraManager
 @end
 
 
-
-/// This is the public class named ScanflowBarcodeDetectionClassifier it loads the tflight model and related activities
-SWIFT_CLASS("_TtC15ScanflowBarcode34ScanflowBarcodeDetectionClassifier")
-@interface ScanflowBarcodeDetectionClassifier : ScanflowDetectionClassiifier
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 /// This is the public class names ScanflowDetectionClassifierHelper

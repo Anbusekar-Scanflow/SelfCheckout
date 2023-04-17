@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/ScanflowBarcode-Swift.h</key>
 		<data>
-		8a5mczPdxMSXSreMlNhaMoChHmk=
+		pTc+bYhC5LX/hsjzSVng+aq7I7E=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/ScanflowBarcode.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Usxm4eLLXzOkNPWXltIWm4BRHC4=
+		fmumx2Dz3hvh/gsNHy4nEZH/0Ks=
 		</data>
 		<key>Modules/ScanflowBarcode.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/ScanflowBarcode.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		2CFjFnfWD9x2r+Y5ah93UFwkuWg=
+		gs/vSKR37ptmEPlRroFy5R3zkrw=
 		</data>
 		<key>Modules/ScanflowBarcode.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SjJd0PeTy5BmeI+KnqkHdNiPULA=
+		a5P2yw0/is5356wUiebqJc+vRLo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1167,14 +1167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hb1520OyJgHcOKunKPMH75d7aQVmtrCCty1FDBd65iQ=
+			OXmqt9GmDIMgzus5YGJs+EdSCOl0BGlYxO3+DiI2KRQ=
 			</data>
 		</dict>
 		<key>Modules/ScanflowBarcode.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfNeBVKzjX4lyua+tcgFmX9/a5stIJngp+sTJj+oep4=
+			N3N4h2GexisiOFI2JXovnr/3RE4kz+c9ybViz43+NXM=
 			</data>
 		</dict>
 		<key>Modules/ScanflowBarcode.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -1188,14 +1188,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fmR8umCmLsE3WFyYmDMZR25o58NxW8buVYwNqjgLlfo=
+			vnujrcIT3zxyATR6ANHqYzVi1lq0K5LPqDAzks9/CGg=
 			</data>
 		</dict>
 		<key>Modules/ScanflowBarcode.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FW+IvUhHmfMC40z+mSfMLhryQQgFM2gRVq8b8zciLyg=
+			B+RK5GTvjEgxO1PA2hAMMAcsU5OaBAOauPCwqJKzy8M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ScanflowCore-Swift.h</key>
 		<data>
-		6E3jbhrdEL5uYuplqIsbPIix9Zs=
+		U0jftpr4U5mSybXFrltqlFjVlq8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/ScanflowCore.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		OTV5I0lgYCdV2X0RFHA8XI3r1s8=
+		0itmwhOC0OqY2XykmFiyKtjLfkQ=
 		</data>
 		<key>Modules/ScanflowCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/ScanflowCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		cr1WPsHvGBAL2ZC6rB6inBEivGQ=
+		3PRyv9YLas3L1Hn27bsye7cqZPs=
 		</data>
 		<key>Modules/ScanflowCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VRjNyiK732lvNqPOnHh9ssG7oYc=
+		oL913MYFUuTVPezNezLJAEidq1A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xTOsytmQnx1tf5LKwITXDu3ktnZT3xln4igCZSd9aFA=
+			9NNUfzQB6Z4/AqGw9vUsuV4TpMWquhkn/h5cXeaHndM=
 			</data>
 		</dict>
 		<key>Modules/ScanflowCore.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y7xUzxpQMDoGmq/cqKkeBh+4OU51/8NHHCIgulRf2ZM=
+			CR9iqS5nhitHgFH7bOzhUClx7SXp9/MOvKbMwt6cyHI=
 			</data>
 		</dict>
 		<key>Modules/ScanflowCore.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -88,14 +88,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yS2HQtTxv8d2jX1BPnyMcjndJwwF4jbFhdhQkMBM+i8=
+			98ZJN+YcgBhjh8N9eaij9Ccc7H+K/WjOvZpcT33pfLk=
 			</data>
 		</dict>
 		<key>Modules/ScanflowCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iYokGWb5T6BZecTSUb3Fg4K6MqLUMyvQ9SPmByFT45c=
+			1UYcDfNe8k0RRERglOe9q+YCagLPCYyHmIxn0jSOXBg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

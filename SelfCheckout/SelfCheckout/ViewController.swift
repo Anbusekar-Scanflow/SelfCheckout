@@ -31,6 +31,12 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func scaButtonTapped(_ sender: Any) {
+        if let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScanningViewController") as? ScanningViewController {
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+    }
+    
     /**
      Scroll to Next Cell
      */
